@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
+# TODO: UPDATE SO THAT WHEN PROFILE PICTURE IS UPDATED
+# TODO: IT DELETES THE OLD PROFILE PICTURE FROM THE SERVER
+
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
